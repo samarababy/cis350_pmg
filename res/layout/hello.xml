@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/gallerylayout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/hello_image"
+        android:contentDescription="@string/pmg_splash_desc" 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/debbie_cohen_gardens5"
+    />
+    
+    <ImageView
+        android:contentDescription="@string/app_name"
+    	android:id="@+id/hello_logo"    
+    	android:src="@drawable/standard_pmg_logo_png"
+    	android:scaleType="fitXY"
+    	android:layout_alignTop="@id/hello_image"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+  />
+    
+    <TextView
+        android:id="@+id/hello_quote"
+        android:layout_alignBottom="@id/hello_image"
+        android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="@string/hello_quote"
+    />
+
+</RelativeLayout>
